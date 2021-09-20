@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  strawberry:
+    build: strawberry 
+    ports: 
+      - "2201-2203:2222"
+
+  shortcake:
+    build: misp
+    ports:
+      - "80:80"
+      - "443:443"
+      - "3306:3306"
+      - "6379:6379"
+      - "6666:6666"
+      - "50000:50000"
+    environment: 
+      MYSQL_MISP_PASSWORD: password123
+      POSTFIX_RELAY_HOST: localhost
+      MISP_FQDN: localhost
+      MISP_EMAIL: admin@localhost
+      MISP_GPG_PASSWORD: password123
+
+  squirell:
+    image: python
+
+
