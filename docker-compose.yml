@@ -6,7 +6,7 @@ services:
     ports: 
       - "2201-2203:2222"
 
-  shortcake:
+  hive:
     build: misp
     ports:
       - "80:80"
@@ -22,7 +22,5 @@ services:
       MISP_EMAIL: admin@localhost
       MISP_GPG_PASSWORD: password123
 
-  squirell:
-    image: python
-
-
+  bee:
+    build: python

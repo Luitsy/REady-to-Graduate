@@ -19,8 +19,17 @@ send -- "pi\r"
 expect "Password:"
 send -- "raspberry\r"
 expect "pi@raspberrypi:"
+
 send -- "sudo systemctl enable ssh\r"
 expect "pi@raspberrypi:"
 send -- "sudo systemctl start ssh\r"
 expect "pi@raspberrypi:"
+
+send -- "sudo apt-get update -y\r"
+expect "pi@raspberrypi:"
+send -- "sudo apt-get upgrade -y\r"
+expect "pi@raspberrypi:"
+send -- "sudo apt install apache2 -y\r"
+expect "pi@raspberrypi:"
 expect eof
+
