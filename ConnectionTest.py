@@ -5,9 +5,7 @@ count = 4 #count is decremented for testing purposes, in practice will be an inf
 while(count>0):
   print("process ID and connection type")
   os.system("sudo netstat -p -at")
-  
-  os.system("sudo netstat -an") #can't remember what this one shows
-  
+    
   print("kernel routing table")
   os.system("sudo netstat -r")
   
@@ -18,13 +16,13 @@ while(count>0):
   os.system("sudo netstat -i")
   
   print("show only established connections")
-  os.system(ss | grep -i tcp")
+  os.system(ss | grep -i")
             
   print("show who is connected")
   os.system("who")
             
             
   
-  print("waiting for 10 sec........")
-  time.sleep(10)
+  print("waiting for 10 sec...............................")
+  time.sleep(5)
   count = count - 1 
