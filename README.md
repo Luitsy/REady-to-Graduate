@@ -27,3 +27,7 @@ To start all container use docker compose: `docker-compose -f "docker-compose.ym
 To access container:
 1. Get container id: `docker ps`
 2. Get into container: `docker exec -it CONTAINERID bash`
+
+
+##Python Script
+To run the python script in the Python Container (currently called 'world.py') and have it save to a .txt file, type the terminal command python world.py > file.txt
