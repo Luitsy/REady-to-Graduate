@@ -1,6 +1,8 @@
 import os
 import time
 
+print("testing")
+
 count = 4 #count is decremented for testing purposes, in practice will be an infinite loop until program is stopped
 while(count>0):
   print("process ID and connection type")
@@ -16,7 +18,7 @@ while(count>0):
   os.system("sudo netstat -i")
   
   print("show only established connections")
-  os.system(ss | grep -i")
+  os.system("ss | grep -i")
             
   print("show who is connected")
   os.system("who")
