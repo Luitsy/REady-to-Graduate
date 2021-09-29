@@ -1,4 +1,4 @@
-This brnach contains all the scripts and files neccesary to rebuild the VM instances. 
+This branch contains all the scripts and files neccesary to rebuild the VM instances. 
 
 
 To clone this repo onto the VM you can use the below code in the terminal:
