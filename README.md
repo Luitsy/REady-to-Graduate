@@ -6,23 +6,6 @@ git clone https://github.com/Luitsy/Ready-to-Graduate.git --branch Strawberry_Pi
 
 Then use the Init_Strawberry.py script from the terminal. 
 
-$$need to add to init- scipt$$
-## update the running version of python to python 3
-update-alternatives --install /usr/bin/python python /usr/bin/python3 1
-
-## update pip installer
-pip install --upgrade pip
-
-## install docker compose - this will take a while
-sudo pip install docker-compose
-
-##To pull MISP Container
-$ git clone https://github.com/MISP/misp-docker
-$ cd misp-docker
-# Copy template.env to .env (on the root directory) and edit the environment variables at .env file
-$ cp template.env .env
-$ vi .env
-
 
 # Ready-to-Graduate
 Honeypot - IT Project II
