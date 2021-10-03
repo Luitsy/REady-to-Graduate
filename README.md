@@ -6,6 +6,19 @@ git clone https://github.com/Luitsy/Ready-to-Graduate.git --branch Strawberry_Pi
 
 Then use the Init_Strawberry.py script from the terminal. 
 
+##need to add to init- scipt
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+##pulls the docker compose files
+##adds permissions
+sudo chmod +x /usr/local/bin/docker-compose
+
+
+To pull MISP Container
+https://github.com/MISP/misp-docker
+
+
+
+
 # Ready-to-Graduate
 Honeypot - IT Project II
 
