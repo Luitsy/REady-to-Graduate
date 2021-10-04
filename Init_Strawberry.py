@@ -4,29 +4,27 @@
 
 import os
 import time
-
-#update the OS
-os.system("apt-get update --allow-releaseinfo-change")
-
+###this part needs to be run manually to ensure it works correctly###
+###update the OS###
+# apt-get update --allow-releaseinfo-change
 #init harddrives and add partition table to disk
-sudo fdisk /dev/vda
-w
+# sudo fdisk /dev/vda
+# w
 
-#create partition using parted tool
-sudo parted /dev/vda
-unit GB
-mkpart
-p
-ext4
-0
-32
+####create partition using parted tool###
+# sudo parted /dev/vda
+# unit GB
+# mkpart
+# p
+# ext4
+# 0
+# 32
 
-#mount the disk
-sudo mkdir /media/Data
-sudo mount /dev/vda /media/Data
+####mount the disk###
+# sudo mkdir /media/Data
+# sudo mount /dev/vda /media/Data
 
-
-
+####this portion will run through the Python IDE###
 #create folder structure
 os.system("mkdir Scripts")
 os.system("mkdir Outputs")
