@@ -18,10 +18,10 @@ os.system("sudo systemctl restart avahi-daemon")
 os.system("sudo su -l pi")
 
 ## update the running version of python to python 3
-os.system("update-alternatives --install /usr/bin/python python /usr/bin/python3 1")
+os.system("sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1")
 
 ## update pip installer
-os.system("pip install --upgrade pip")
+os.system("sudo pip install --upgrade pip")
 
 ## install docker compose - this will take a while
 os.system("sudo pip install docker-compose")
