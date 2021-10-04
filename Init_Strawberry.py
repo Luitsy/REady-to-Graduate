@@ -8,6 +8,25 @@ import time
 #update the OS
 os.system("apt-get update --allow-releaseinfo-change")
 
+#init harddrives and add partition table to disk
+sudo fdisk /dev/vda
+w
+
+#create partition using parted tool
+sudo parted /dev/vda
+unit GB
+mkpart
+p
+ext4
+0
+32
+
+#mount the disk
+sudo mkdir /media/Data
+sudo mount /dev/vda /media/Data
+
+
+
 #create folder structure
 os.system("mkdir Scripts")
 os.system("mkdir Outputs")
