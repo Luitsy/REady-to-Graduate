@@ -5,6 +5,9 @@
 import os
 import time
 
+#update the OS
+os.system("apt-get update --allow-releaseinfo-change")
+
 #create folder structure
 os.system("mkdir Scripts")
 os.system("mkdir Outputs")
