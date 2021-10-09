@@ -11,7 +11,7 @@ An Ubuntu image with QEMU installed running a raspberry pi buster VM
 Need to downlaod the image and add into the strawberry folder. http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-09-30/2019-09-26-raspbian-buster-lite.zip
 
 ## Python container
-Currently a placeholder for the intelligence gathering scripts. The contents in 'hello.py' can be replaced for testing purposes
+The main file is container.py, which runs the script.py file and exports the data to MISP. script.py is run on a continuous loop every 4 hours, and that data is collected in a .CSV file by container.py. container.py's loop is neverending so that data is continuously being collected. 
 
 ## MISP container
 Contains an instance of MISP
@@ -29,5 +29,3 @@ To access container:
 2. Get into container: `docker exec -it CONTAINERID bash`
 
 
-##Python Script
-To run the python script in the Python Container (currently called 'world.py') and have it save to a .txt file, type the terminal command python world.py > file.txt
