@@ -6,6 +6,12 @@ The Ubuntu MISP server will pull from this branch every 30 mins to import the da
 
 There is a template file that has the headings that MISP requires for a succesful import, not all headings need to have data added. see https://www.misp-standard.org/rfc/misp-standard-core.html#name-format-2 for more details
 
+UUID is recommended to be generated using UUID Ver 4 (see https://www.uuidgenerator.net/) or in Python
+
+import uuid
+myuuid = uuid.uuid4()
+print('Your UUID is: ' + str(myuuid))
+
 Created by Ready to Graduate.
 UNSW Canberra
 This software is designed for educational use only. 
