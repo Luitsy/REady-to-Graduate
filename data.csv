@@ -4,14 +4,13 @@ tcp        0      0 localhost:smtp          0.0.0.0:*               LISTEN      
 tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN      544/sshd            
 tcp        0      0 localhost:ipp           0.0.0.0:*               LISTEN      440/cupsd           
 tcp        0      0 45.76.123.28.vult:57722 ec2-13-237-44-5.a:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:51678 ec2-52-64-108-95.:https TIME_WAIT   -                   
+tcp        0      0 45.76.123.28.vult:52750 lb-140-82-112-3-i:https TIME_WAIT   -                   
 tcp        0      0 45.76.123.28.vult:52736 lb-140-82-112-3-i:https TIME_WAIT   -                   
 tcp        0      0 45.76.123.28.vult:52724 lb-140-82-112-3-i:https TIME_WAIT   -                   
 tcp        0      0 45.76.123.28.vult:57734 ec2-13-237-44-5.a:https TIME_WAIT   -                   
+tcp        0     32 45.76.123.28.vult:34540 lb-140-82-114-3-i:https FIN_WAIT1   -                   
 tcp        0      0 45.76.123.28.vult:52732 lb-140-82-112-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52710 lb-140-82-112-3-i:https TIME_WAIT   -                   
 tcp        0      0 45.76.123.28.vult:57724 ec2-13-237-44-5.a:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52716 lb-140-82-112-3-i:https TIME_WAIT   -                   
 tcp        0      0 45.76.123.28.vult:34522 lb-140-82-114-3-i:https TIME_WAIT   -                   
 tcp6       0      0 localhost:smtp          [::]:*                  LISTEN      887/exim4           
 tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      544/sshd            
@@ -28,13 +27,12 @@ tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      544/sshd            
 tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      440/cupsd           
 tcp        0      0 45.76.123.28:57722      13.237.44.5:443         TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:51678      52.64.108.95:443        TIME_WAIT   -                   
+tcp        0      0 45.76.123.28:52750      140.82.112.3:443        TIME_WAIT   -                   
 tcp        0      0 45.76.123.28:52736      140.82.112.3:443        TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52724      140.82.112.3:443        TIME_WAIT   -                   
 tcp        0      0 45.76.123.28:57734      13.237.44.5:443         TIME_WAIT   -                   
+tcp        0      0 45.76.123.28:34540      140.82.114.3:443        TIME_WAIT   -                   
 tcp        0      0 45.76.123.28:52732      140.82.112.3:443        TIME_WAIT   -                   
 tcp        0      0 45.76.123.28:57724      13.237.44.5:443         TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52716      140.82.112.3:443        TIME_WAIT   -                   
 tcp        0      0 45.76.123.28:34522      140.82.114.3:443        TIME_WAIT   -                   
 tcp6       0      0 ::1:25                  :::*                    LISTEN      887/exim4           
 tcp6       0      0 :::22                   :::*                    LISTEN      544/sshd            
@@ -299,7 +297,7 @@ unix  3      [ ]         STREAM     CONNECTED     268633   1/init               
 unix  2      [ ]         DGRAM                    26317    914/dbus-daemon      
 unix  3      [ ]         STREAM     CONNECTED     18858    438/dbus-daemon      /var/run/dbus/system_bus_socket
 unix  3      [ ]         STREAM     CONNECTED     32543    438/dbus-daemon      /var/run/dbus/system_bus_socket
-unix  2      [ ]         DGRAM                    274261   8515/sudo            
+unix  2      [ ]         DGRAM                    274545   8574/sudo            
 unix  3      [ ]         STREAM     CONNECTED     42993    914/dbus-daemon      /run/user/1000/bus
 unix  3      [ ]         STREAM     CONNECTED     21322    496/dockerd          
 unix  2      [ ]         DGRAM                    29972    552/polkitd          
@@ -307,7 +305,7 @@ unix  3      [ ]         STREAM     CONNECTED     24858    1/init               
 Kernel Interface table
 Iface      MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
 docker0   1500        0      0      0 0             0      0      0      0 BMU
-eth0      1500    16219      0      0 0        110724      0      0      0 BMRU
+eth0      1500    16270      0      0 0        110786      0      0      0 BMRU
 lo       65536        0      0      0 0             0      0      0      0 LRU
 pi       tty7         2021-10-13 12:00 (:0)
 pi       tty1         2021-10-13 12:00
