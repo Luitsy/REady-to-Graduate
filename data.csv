@@ -3,13 +3,7 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 localhost:smtp          0.0.0.0:*               LISTEN      887/exim4           
 tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN      544/sshd            
 tcp        0      0 localhost:ipp           0.0.0.0:*               LISTEN      440/cupsd           
-tcp        0      0 45.76.123.28.vult:51290 ec2-13-236-229-21:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52750 lb-140-82-112-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52756 lb-140-82-112-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:34540 lb-140-82-114-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52754 lb-140-82-112-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:51286 ec2-13-236-229-21:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52764 lb-140-82-112-3-i:https TIME_WAIT   -                   
+tcp        0     32 45.76.123.28.vult:34556 lb-140-82-114-3-i:https FIN_WAIT1   -                   
 tcp6       0      0 localhost:smtp          [::]:*                  LISTEN      887/exim4           
 tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      544/sshd            
 tcp6       0      0 localhost:ipp           [::]:*                  LISTEN      440/cupsd           
@@ -24,13 +18,7 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      887/exim4           
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      544/sshd            
 tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      440/cupsd           
-tcp        0      0 45.76.123.28:51290      13.236.229.21:443       TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52750      140.82.112.3:443        TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52756      140.82.112.3:443        TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:34540      140.82.114.3:443        TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52754      140.82.112.3:443        TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:51286      13.236.229.21:443       TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52764      140.82.112.3:443        TIME_WAIT   -                   
+tcp        0      0 45.76.123.28:34556      140.82.114.3:443        TIME_WAIT   -                   
 tcp6       0      0 ::1:25                  :::*                    LISTEN      887/exim4           
 tcp6       0      0 :::22                   :::*                    LISTEN      544/sshd            
 tcp6       0      0 ::1:631                 :::*                    LISTEN      440/cupsd           
@@ -285,7 +273,7 @@ unix  3      [ ]         STREAM     CONNECTED     268639   914/dbus-daemon      
 unix  3      [ ]         STREAM     CONNECTED     26365    949/gvfsd            
 unix  3      [ ]         STREAM     CONNECTED     18857    552/polkitd          
 unix  3      [ ]         STREAM     CONNECTED     32542    1041/gvfs-udisks2-v  
-unix  2      [ ]         DGRAM                    275622   8784/sudo            
+unix  2      [ ]         DGRAM                    276312   8888/sudo            
 unix  3      [ ]         STREAM     CONNECTED     41582    963/lxpanel          
 unix  3      [ ]         STREAM     CONNECTED     25087    914/dbus-daemon      
 unix  3      [ ]         STREAM     CONNECTED     32092    1008/pulseaudio      
@@ -302,7 +290,7 @@ unix  3      [ ]         STREAM     CONNECTED     24858    1/init               
 Kernel Interface table
 Iface      MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
 docker0   1500        0      0      0 0             0      0      0      0 BMU
-eth0      1500    16424      0      0 0        110979      0      0      0 BMRU
+eth0      1500    16496      0      0 0        111074      0      0      0 BMRU
 lo       65536        0      0      0 0             0      0      0      0 LRU
 pi       tty7         2021-10-13 12:00 (:0)
 pi       tty1         2021-10-13 12:00
@@ -313,13 +301,7 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 localhost:smtp          0.0.0.0:*               LISTEN      887/exim4           
 tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN      544/sshd            
 tcp        0      0 localhost:ipp           0.0.0.0:*               LISTEN      440/cupsd           
-tcp        0      0 45.76.123.28.vult:51290 ec2-13-236-229-21:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52750 lb-140-82-112-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52756 lb-140-82-112-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:34540 lb-140-82-114-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52754 lb-140-82-112-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:51286 ec2-13-236-229-21:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52764 lb-140-82-112-3-i:https TIME_WAIT   -                   
+tcp        0      0 45.76.123.28.vult:34556 lb-140-82-114-3-i:https TIME_WAIT   -                   
 tcp6       0      0 localhost:smtp          [::]:*                  LISTEN      887/exim4           
 tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      544/sshd            
 tcp6       0      0 localhost:ipp           [::]:*                  LISTEN      440/cupsd           
@@ -334,13 +316,7 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      887/exim4           
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      544/sshd            
 tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      440/cupsd           
-tcp        0      0 45.76.123.28:51290      13.236.229.21:443       TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52750      140.82.112.3:443        TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52756      140.82.112.3:443        TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:34540      140.82.114.3:443        TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52754      140.82.112.3:443        TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:51286      13.236.229.21:443       TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52764      140.82.112.3:443        TIME_WAIT   -                   
+tcp        0      0 45.76.123.28:34556      140.82.114.3:443        TIME_WAIT   -                   
 tcp6       0      0 ::1:25                  :::*                    LISTEN      887/exim4           
 tcp6       0      0 :::22                   :::*                    LISTEN      544/sshd            
 tcp6       0      0 ::1:631                 :::*                    LISTEN      440/cupsd           
@@ -568,7 +544,6 @@ unix  3      [ ]         STREAM     CONNECTED     24819    496/dockerd
 unix  3      [ ]         STREAM     CONNECTED     17492    436/udisksd          
 unix  3      [ ]         STREAM     CONNECTED     14963    1/init               /run/systemd/journal/stdout
 unix  3      [ ]         STREAM     CONNECTED     32124    588/Xorg             @/tmp/.X11-unix/X0
-unix  2      [ ]         DGRAM                    275833   8806/sudo            
 unix  3      [ ]         STREAM     CONNECTED     39472    963/lxpanel          
 unix  3      [ ]         STREAM     CONNECTED     21566    743/docker-containe  /var/run/docker/containerd/containerd.sock
 unix  3      [ ]         STREAM     CONNECTED     268629   6926/dconf-service   
@@ -605,6 +580,7 @@ unix  3      [ ]         STREAM     CONNECTED     268633   1/init               
 unix  2      [ ]         DGRAM                    26317    914/dbus-daemon      
 unix  3      [ ]         STREAM     CONNECTED     18858    438/dbus-daemon      /var/run/dbus/system_bus_socket
 unix  3      [ ]         STREAM     CONNECTED     32543    438/dbus-daemon      /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    276521   8910/sudo            
 unix  3      [ ]         STREAM     CONNECTED     42993    914/dbus-daemon      /run/user/1000/bus
 unix  3      [ ]         STREAM     CONNECTED     21322    496/dockerd          
 unix  2      [ ]         DGRAM                    29972    552/polkitd          
@@ -612,7 +588,7 @@ unix  3      [ ]         STREAM     CONNECTED     24858    1/init               
 Kernel Interface table
 Iface      MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
 docker0   1500        0      0      0 0             0      0      0      0 BMU
-eth0      1500    16437      0      0 0        110996      0      0      0 BMRU
+eth0      1500    16506      0      0 0        111089      0      0      0 BMRU
 lo       65536        0      0      0 0             0      0      0      0 LRU
 pi       tty7         2021-10-13 12:00 (:0)
 pi       tty1         2021-10-13 12:00
@@ -623,11 +599,7 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 localhost:smtp          0.0.0.0:*               LISTEN      887/exim4           
 tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN      544/sshd            
 tcp        0      0 localhost:ipp           0.0.0.0:*               LISTEN      440/cupsd           
-tcp        0      0 45.76.123.28.vult:51290 ec2-13-236-229-21:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52756 lb-140-82-112-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52754 lb-140-82-112-3-i:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:51286 ec2-13-236-229-21:https TIME_WAIT   -                   
-tcp        0      0 45.76.123.28.vult:52764 lb-140-82-112-3-i:https TIME_WAIT   -                   
+tcp        0      0 45.76.123.28.vult:34556 lb-140-82-114-3-i:https TIME_WAIT   -                   
 tcp6       0      0 localhost:smtp          [::]:*                  LISTEN      887/exim4           
 tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      544/sshd            
 tcp6       0      0 localhost:ipp           [::]:*                  LISTEN      440/cupsd           
@@ -642,9 +614,7 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      887/exim4           
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      544/sshd            
 tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      440/cupsd           
-tcp        0      0 45.76.123.28:51290      13.236.229.21:443       TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:51286      13.236.229.21:443       TIME_WAIT   -                   
-tcp        0      0 45.76.123.28:52764      140.82.112.3:443        TIME_WAIT   -                   
+tcp        0      0 45.76.123.28:34556      140.82.114.3:443        TIME_WAIT   -                   
 tcp6       0      0 ::1:25                  :::*                    LISTEN      887/exim4           
 tcp6       0      0 :::22                   :::*                    LISTEN      544/sshd            
 tcp6       0      0 ::1:631                 :::*                    LISTEN      440/cupsd           
@@ -872,6 +842,7 @@ unix  3      [ ]         STREAM     CONNECTED     24819    496/dockerd
 unix  3      [ ]         STREAM     CONNECTED     17492    436/udisksd          
 unix  3      [ ]         STREAM     CONNECTED     14963    1/init               /run/systemd/journal/stdout
 unix  3      [ ]         STREAM     CONNECTED     32124    588/Xorg             @/tmp/.X11-unix/X0
+unix  2      [ ]         DGRAM                    276730   8932/sudo            
 unix  3      [ ]         STREAM     CONNECTED     39472    963/lxpanel          
 unix  3      [ ]         STREAM     CONNECTED     21566    743/docker-containe  /var/run/docker/containerd/containerd.sock
 unix  3      [ ]         STREAM     CONNECTED     268629   6926/dconf-service   
@@ -893,7 +864,6 @@ unix  3      [ ]         STREAM     CONNECTED     18149    1/init               
 unix  3      [ ]         STREAM     CONNECTED     268638   6926/dconf-service   
 unix  3      [ ]         STREAM     CONNECTED     24856    914/dbus-daemon      
 unix  3      [ ]         STREAM     CONNECTED     32091    1041/gvfs-udisks2-v  
-unix  2      [ ]         DGRAM                    276043   8828/sudo            
 unix  3      [ ]         STREAM     CONNECTED     42992    996/python3          
 unix  2      [ ]         DGRAM                    19501    496/dockerd          
 unix  3      [ ]         STREAM     CONNECTED     268639   914/dbus-daemon      /run/user/1000/bus
@@ -916,7 +886,7 @@ unix  3      [ ]         STREAM     CONNECTED     24858    1/init               
 Kernel Interface table
 Iface      MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
 docker0   1500        0      0      0 0             0      0      0      0 BMU
-eth0      1500    16444      0      0 0        111009      0      0      0 BMRU
+eth0      1500    16516      0      0 0        111104      0      0      0 BMRU
 lo       65536        0      0      0 0             0      0      0      0 LRU
 pi       tty7         2021-10-13 12:00 (:0)
 pi       tty1         2021-10-13 12:00
