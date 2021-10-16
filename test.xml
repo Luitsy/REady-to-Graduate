@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?> <Event> <date>2015-04-14</date> <threat_level_id>1</threat_level_id> <info>This is a sample event</info> <analysis>0</analysis> <distribution>1</distribution> <Attribute> <type>ip-src</type> <category>Network activity</category> <distribution>1</distribution> <value>8.8.8.8</value> </Attribute> </Event>
