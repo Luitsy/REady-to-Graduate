@@ -1,0 +1,49 @@
+{
+  "57c6ac4c-c60c-4f79-a38f-b666950d210f": {
+    "info": "Malspam 2016-08-31 (.wsf in .zip) - campaign: Photo",
+    "Orgc": {
+      "id": "2",
+      "name": "CIRCL",
+      "uuid": "55f6ea5e-2c60-40e5-964f-47a8950d210f"
+    },
+    "analysis": "0",
+    "Tag": [
+      {
+        "colour": "#3d7a00",
+        "name": "circl:incident-classification=\"malware\""
+      },
+      {
+        "colour": "#ffffff",
+        "name": "tlp:white"
+      }
+    ],
+    "timestamp": "1472638251",
+    "date": "2016-08-31",
+    "threat_level_id": "3"
+  },
+  "5720accd-dd28-45f8-80e5-4605950d210f": {
+    "info": "Malspam 2016-04-27 - Locky",
+    "Orgc": {
+      "id": "2",
+      "name": "CIRCL"
+    },
+    "analysis": "2",
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:white"
+      },
+      {
+        "colour": "#3d7a00",
+        "name": "circl:incident-classification=\"malware\""
+      },
+      {
+        "colour": "#2c4f00",
+        "name": "malware_classification:malware-category=\"Ransomware\""
+      }
+    ],
+    "timestamp": "1461764231",
+    "date": "2016-04-27",
+    "threat_level_id": "3"
+  }
+}
