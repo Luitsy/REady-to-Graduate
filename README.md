@@ -19,6 +19,22 @@ import uuid
 myuuid = uuid.uuid4()
 print('Your UUID is: ' + str(myuuid))
 
+
+# Importing files into MISP
+A CSV file is pulled from the Github every 30 minutes, and stored in the MISP folder on the Desktop. This file can be imported as is into MISP. 
+
+- Click add event on the left and fill in the basic details about the event (name, date, threat level) and submit. 
+- Click populate from... (left column) then freetext import. The data from the CSV file can then be inserted into the text box as is, and MISP will automatically detect the useful information. 
+- Click OK then refresh the page to load the new data. 
+
+MISP will show what bits of data have appeared in previous events and you can edit the data/ add comments to assist MISP in analysis. 
+
+# Generating a report from MISP
+Once an event has been made and populated, a report can be generated. 
+
+- Click download from the left column
+- Choose the CSV option and save
+
 Created by Ready to Graduate.
 UNSW Canberra
 This software is designed for educational use only. 
