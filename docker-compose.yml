@@ -1,10 +1,8 @@
 version: '3'
 
 services:
-  strawberry:
-    build: strawberry 
-    ports: 
-      - "2201-2203:2222"
+  bee:
+    build: python
 
   hive:
     build: misp
@@ -22,5 +20,7 @@ services:
       MISP_EMAIL: admin@localhost
       MISP_GPG_PASSWORD: password123
 
-  bee:
-    build: python
+  strawberry:
+    build: pidoc
+    ports: 
+      - "2201-2203:2222"

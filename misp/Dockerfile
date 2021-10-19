@@ -1,3 +1,5 @@
+# From https://hub.docker.com/r/harvarditsecurity/misp/dockerfile
+
 FROM ubuntu:18.04
 
 # Dir you need to override to keep data on reboot/new container:
@@ -56,9 +58,9 @@ RUN sudo pip3 install --upgrade pip ; \
     sudo pip3 install redis
 
 
-WORKDIR /var/www/MISP
-RUN sudo -u www-data -H git submodule init ; \
-    sudo -u www-data -H git submodule update
+# WORKDIR /var/www/MISP
+# RUN sudo -u www-data -H git submodule init ; \
+#     sudo -u www-data -H git submodule update
 
 WORKDIR /usr/local/src
 RUN sudo -H git clone https://github.com/MISP/misp-modules.git
@@ -68,7 +70,6 @@ RUN sudo -H git checkout ; \
     sudo pip3 install -I -r REQUIREMENTS ;  \
     sudo pip3 install -I .
 
-#RUN sudo pip uninstall -y cybox
 ARG MISP_FQDN=localhost
 ARG MISP_EMAIL=admin@localhost
 
