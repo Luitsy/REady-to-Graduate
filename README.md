@@ -19,6 +19,8 @@ import uuid
 myuuid = uuid.uuid4()
 print('Your UUID is: ' + str(myuuid))
 
+# Transferring Data from the VM to MISP Server
+The data that is collected on the Strawberry Pi VM is pushed to the Github every 30 minutes. This is also pulled into the MISP server every 30 minutes, so there is a constant stream of new data. Importing the data into a MISP event is currently not automated and is discussed in the next step.
 
 # Importing files into MISP
 A CSV file is pulled from the Github every 30 minutes, and stored in the MISP folder on the Desktop. This file can be imported as is into MISP. 
